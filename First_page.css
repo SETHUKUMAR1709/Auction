@@ -1,0 +1,241 @@
+img{
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 5px;
+}
+.header_img{
+    width: 20%;
+    padding: 20px 40%;
+    border-radius: 10px;
+}
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('https://thumbs.dreamstime.com/b/auction-stamp-auction-stamp-sign-icon-editable-vector-illustration-isolated-white-background-123963400.jpg'); */
+    background-color: aqua;
+    filter: blur(50%);
+    margin-bottom: 50px;
+}
+.contents{
+    margin-bottom: 50px;
+}
+.topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 100px;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons > a{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+.img_icons{
+    margin-bottom: 10px;
+    border-radius: 92px;
+    width: initial;
+}
+
+
+.upcoming_bids_items{  
+    white-space: nowrap;
+    overflow:auto;
+}
+.bids{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: 25em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-right: 5px;
+    text-wrap: wrap;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.catagories > label > a{
+    font-size: 30px;
+    margin: 5px 10px;
+    text-align: center;
+    float: left;
+    width: 6em;
+    height: 1.5em;
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.catogiries{
+    margin: 20px 20vw;
+    border: 3px solid blue;
+}
+
+.catagories{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.chunks_list{  
+    white-space: nowrap;
+    overflow:auto;
+}
+.chunk_items{
+    text-align: center;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.chunk_items_img{
+    width: 70%;
+    padding-top: 5px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+footer{
+    display: grid;
+    margin-top: 25px;
+    justify-items: center;
+}
+footer p{
+    margin-bottom: -10px;
+}
+
+
+
+
+
+body{
+    background-color: aqua;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    }
+.logo{
+    padding: 10px 50px;
+}
+
+.navbar{
+    background-color: rgb(18, 137, 103);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.list{
+    list-style: none;
+    display: inline-block;
+    }
+ ul{
+    float:right;
+    text-transform: uppercase;
+    }
+    
+li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: black;
+    padding: -15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+button a{
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list a.active, .list a:hover{
+    background-color: black;
+    border: 3px solid black;
+    transition: .5s;
+}
+.logo{
+    padding: 10px 50px;
+}
+
+.navbar{
+    background-color: rgb(18, 137, 103);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.list{
+    list-style: none;
+    display: inline-block;
+    }
+ ul{
+    float:right;
+    text-transform: uppercase;
+    }
+    
+li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: black;
+    padding: -15px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+button a{
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.list a.active, .list a:hover{
+    background-color: black;
+    border: 3px solid black;
+    transition: .5s;
+
+}
+.wrap{
+    position:relative;
+    width:90%;
+    left:5%;
+    background-color: #fff;
+    border: thick solid rgb(18, 137, 103);
+    font-size:large;
+}
+.Elec{
+    float: left;
+}
+.pa{
+    margin-left:400px;
+
+}
+.he{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}

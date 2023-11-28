@@ -1,0 +1,60 @@
+img{
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 5px;
+}
+.header_img{
+    width: 20%;
+    padding: 20px 40%;
+    border-radius: 10px;
+}
+body{
+    background-color: aqua;
+}
+.contents{
+    margin-bottom: 50px;
+}
+.topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 100px;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons > a{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+.img_icons{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+}
+.horizontal_scroll_items{
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.bids{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: 25em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-right: 5px;
+    text-wrap: wrap;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="First_page.css">
+    <title>BidsAuction</title>
+</head>
+
+<body>
+    <?php ?>
+    <header>
+
+    </header>
+    <div class="contents">
+        <div class="topics">
+            <div class="icons">
+                <img src="img/hammer_icon.avif" class="img_icons">
+                <a href="">Publish</a>
+            </div>
+            
+            <div class="icons">
+                <br><br><br>
+                <img src="img/hammer_icon.avif" class="img_icons">
+                <a href="">Bids</a>
+            </div>
+            <div class="icons">
+                <img src="img/hammer_icon.avif" class="img_icons">
+                <a href="">Live Auction</a>
+            </div>
+        </div>
+        <!--live auctions and upcoming biddings-->
+        <hr>
+        <div class="upcoming_bids">
+            <h2>Upcoming Bids</h2>
+            <div class="upcoming_bids_items"> 
+                
+            <?php 
+            require_once "publish.db.php";
+            $query = "SELECT * FROM  publish_item GROUP BY time";
+            $stmt = $pdo->prepare($query);
+            $stmt->execute();
+            $res = $stmt -> fetchALL(PDO::FETCH_ASSOC);
+
+          if (empty($res) == false) {
+          	foreach ($res as $items) {  ?>
+             <div class="up_bids" id='bid${i}'><a> <img src="img/<?=$items['image_name']?>">
+                <h3><?=$items['product_name']?></h3>
+                <p><?=$items['seller_name']?></p>
+                <p><?=$items['time']?></p>
+            </a></div>   
+             
+          		
+    <?php }} 
+    else{?>
+        <p>No items</p>
+    <?php }?>
+
+            </div>
+        </div>
+        <hr>
+        <div class="catogiries">
+            <label>Electronic</label>
+            <label>Furniture</label>
+            <label>Appliances</label>
+            <label>Antique</label>
+            <label>Properties</label>
+            <label>Properties</label>
+        </div>
+        <hr>
+        <div class="chunks">
+            <h2>Chunks</h2>
+            <div class="chunks_list">
+            <?php 
+            require_once "publish.db.php";
+            $query = "SELECT * FROM  chunk_item";
+            $stmt = $pdo->prepare($query);
+            $stmt->execute();
+            $res = $stmt -> fetchALL(PDO::FETCH_ASSOC);
+
+          if (empty($res) == false) {
+          	foreach ($res as $items) {  ?>
+             <div class="up_bids" id='bid${i}'><a> <img src="C:\xampp\htdocs\Auction\img\IMG-6561ee1d2e13c8.05936295.jfif">
+                <h3><?=$items['product_name']?></h3>
+                <p><?=$items['seller_name']?></p>
+                <p><?=$items['caption']?></p>
+                <p><?=$items['price']?></p>
+            </a></div>   
+             
+          		
+    <?php }} 
+    else{?>
+        <p>No items</p>
+    <?php }?>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <footer>
+        &copy; TEAM SSTP
+        <a href="mailto:sethukumars774@gmail,com"><p>email</p></a>
+        <a href="tel:+919360181828">contacts</a>
+    </footer>
+    <!-- <script src="First_page.js"></script> -->
+</body>
+
+</html>

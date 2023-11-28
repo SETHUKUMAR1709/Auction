@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="publish.css">
+    <title>Publish</title>
+</head>
+
+<body>
+    <header>
+    <a href="index.php">
+        <img src="img\BID AUCTION 2.png" class="header_img">
+        </a>
+    </header>
+    <div class="input">
+
+        <p>Select Type</p>
+        <label class="type_selection">
+            <button onclick="add_bid_input()">Bidding</button>
+            <button onclick="add_chunk_input()">Chunk</button>
+        <label class="inter"></label>
+
+    </div>
+    <script src="publish.js">
+    </script>
+</body>
+
+</html>

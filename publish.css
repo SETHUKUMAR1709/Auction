@@ -1,0 +1,44 @@
+.input_div{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    font-size: 30px;
+    justify-content: center;
+    gap: 20px
+}
+.input_div > #image{
+    padding: auto 0px;
+}
+.publish{
+    display: grid;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.type_selection{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.input{
+    margin: 30px 20% 0 20%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.publish > label{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.header_img{
+    margin: 50px 35%;  
+}
+.input > p{
+    padding: 0 40%;
+    font-size: 30px;
+    width: 20%;
+}
+button{
+    font-size: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
